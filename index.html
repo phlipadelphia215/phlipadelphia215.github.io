@@ -1,98 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phlipadelphia215 Marketplace</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        .container {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            width: 100%;
-            max-width: 400px;
-            transition: transform 0.3s ease;
-        }
-        .container:hover {
-            transform: translateY(-5px);
-        }
-        .logo {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 1.5rem;
-            border-radius: 10px;
-        }
-        h1 {
-            font-size: 2rem;
-            color: #2c3e50;
-            margin-bottom: 1.5rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .link-container {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        a {
-            text-decoration: none;
-            color: white;
-            background: linear-gradient(90deg, #3498db, #2980b9);
-            padding: 1rem;
-            border-radius: 10px;
-            font-size: 1.1rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            display: block;
-        }
-        a:hover {
-            background: linear-gradient(90deg, #2980b9, #3498db);
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
-        }
-        @media (max-width: 480px) {
-            .container {
-                padding: 1.5rem;
-                margin: 0 10px;
-            }
-            h1 {
-                font-size: 1.5rem;
-            }
-            a {
-                font-size: 1rem;
-            }
-            .logo {
-                max-width: 80%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phlipadelphia215 Marketplace</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at top left, #1e1e2f, #121212);
+      color: #f0f0f0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* Container */
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      width: 100%;
+      max-width: 420px;
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .container:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Logo */
+    .logo {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    /* Title */
+    h1 {
+      font-size: 2rem;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    /* Links */
+    .link-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      padding: 1rem;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: block;
+    }
+    a:hover {
+      background: linear-gradient(90deg, #0072ff, #00c6ff);
+      transform: scale(1.05);
+      box-shadow: 0 5px 20px rgba(0, 198, 255, 0.4);
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .container {
+        padding: 1.5rem;
+        margin: 0 10px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      a {
+        font-size: 1rem;
+      }
+      .logo {
+        max-width: 80%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <img src="logo.png" alt="Flip Adelphia Logo" class="logo">
-        <h1>Flip Adelphia Marketplace</h1>
-        <div class="link-container">
-            <a href="https://ebay.com/usr/phlipadelphia215" target="_blank">Visit My eBay Store</a>
-            <a href="https://poshmark.com/closet/phlipadelphia21" target="_blank">Visit My Poshmark Closet</a>
-            <a href="https://mercari.com/u/phlipadelphia215" target="_blank">Visit My Mercari</a>
-        </div>
+  <div class="container">
+    <img src="logo.png" alt="Flip Adelphia Logo" class="logo" />
+    <h1>Phlipadelphia215 Marketplace</h1>
+    <div class="link-container">
+      <a href="https://ebay.com/usr/phlipadelphia215" target="_blank">Visit My eBay Store</a>
+      <a href="https://poshmark.com/closet/phlipadelphia21" target="_blank">Visit My Poshmark Closet</a>
+      <a href="https://mercari.com/u/phlipadelphia215" target="_blank">Visit My Mercari</a>
     </div>
+  </div>
 </body>
 </html>
