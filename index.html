@@ -3,44 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Marketplace Links</title>
+    <title>Flip Adelphia Marketplace</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             text-align: center;
-            margin: 50px;
-            background-color: #f0f0f0;
+            width: 100%;
+            max-width: 400px;
+            transition: transform 0.3s ease;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+        }
+        .logo {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
         }
         h1 {
-            color: #333;
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         .link-container {
             display: flex;
             flex-direction: column;
-            gap: 15px;
-            max-width: 300px;
-            margin: 0 auto;
+            gap: 1rem;
         }
         a {
             text-decoration: none;
             color: white;
-            background-color: #007bff;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 18px;
+            background: linear-gradient(90deg, #3498db, #2980b9);
+            padding: 1rem;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: block;
         }
         a:hover {
-            background-color: #0056b3;
+            background: linear-gradient(90deg, #2980b9, #3498db);
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 1.5rem;
+                margin: 0 10px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            a {
+                font-size: 1rem;
+            }
+            .logo {
+                max-width: 80%;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>My Marketplace Links</h1>
-    <div class="link-container">
-        <a href="https://www.ebay.com/usr/phlipadelphia215" target="_blank">Visit My eBay Store</a>
-        <a href="https://www.poshmark.com/closet/phlipadelphia21" target="_blank">Visit My Poshmark Closet</a>
-        <!-- Add more links as needed -->
-        <a href="https://www.mercari.com/u/phlipadelphia215" target="_blank">Other Marketplace</a>
+    <div class="container">
+        <img src="logo.png" alt="Flip Adelphia Logo" class="logo">
+        <h1>Flip Adelphia Marketplace</h1>
+        <div class="link-container">
+            <a href="https://ebay.com/usr/phlipadelphia215" target="_blank">Visit My eBay Store</a>
+            <a href="https://poshmark.com/closet/phlipadelphia21" target="_blank">Visit My Poshmark Closet</a>
+            <!-- Add more links as needed -->
+            <a href="https://mercari.com/u/phlipadelphia215" target="_blank">Visit My Mercari</a>
+        </div>
     </div>
 </body>
 </html>
